@@ -8,6 +8,7 @@ import com.facebook.stetho.Stetho
 import za.co.lebogangnkosi.apptranslate.R
 import za.co.lebogangnkosi.apptranslate.databinding.ActivityMainBinding
 import za.co.lebogangnkosi.apptranslatelib.Translate
+import za.co.lebogangnkosi.apptranslatelib.common.Constants
 import za.co.lebogangnkosi.apptranslatelib.common.Listener
 import za.co.lebogangnkosi.apptranslatelib.exceptions.TranslateException
 
@@ -32,7 +33,7 @@ class Example1Activity : AppCompatActivity() {
      * If you don't have APIs for your app we recommend you use Firebase to get started
      */
     var mTranslate = Translate(
-        "AIzaSyAvgzOSHbtr0ShUHlGGBbiM27DL6tyfHlc",
+        Constants.getApiKey(),
         "en",
         "zu",
         true

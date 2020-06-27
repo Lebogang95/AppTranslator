@@ -12,3 +12,4 @@
 /captures
 .externalNativeBuild
 .cxx
+/AppTranslate/src/main/java/za/co/lebogangnkosi/apptranslatelib/common/Constants.kt
