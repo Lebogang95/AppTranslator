@@ -1,5 +1,4 @@
 # AppTranslator
 Translate your entire app
 
-
-[![Release]](https://jitpack.io/#Lebogang95/AppTranslator)
+[![](https://jitpack.io/v/Lebogang95/AppTranslate.svg)](https://jitpack.io/#Lebogang95/AppTranslator)
