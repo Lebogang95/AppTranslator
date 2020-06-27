@@ -7,11 +7,9 @@ import androidx.databinding.DataBindingUtil
 import com.facebook.stetho.Stetho
 import za.co.lebogangnkosi.apptranslate.R
 import za.co.lebogangnkosi.apptranslate.databinding.ActivityMainBinding
+import za.co.lebogangnkosi.apptranslatelib.Listener
 import za.co.lebogangnkosi.apptranslatelib.Translate
-import za.co.lebogangnkosi.apptranslatelib.common.Constants
-import za.co.lebogangnkosi.apptranslatelib.common.Listener
 import za.co.lebogangnkosi.apptranslatelib.exceptions.TranslateException
-
 
 /**
  * Example Activity to translate the content of it's Layout manually
@@ -33,7 +31,7 @@ class Example1Activity : AppCompatActivity() {
      * If you don't have APIs for your app we recommend you use Firebase to get started
      */
     var mTranslate = Translate(
-        Constants.getApiKey(),
+        "",
         "en",
         "zu",
         true
@@ -57,7 +55,8 @@ class Example1Activity : AppCompatActivity() {
         arrayList.add("Navigation Drawer") //1
         arrayList.add("BottomSheet") //2
         mBinding.button.setOnClickListener {
-            mTranslate.createService(arrayList, object : Listener {
+            mTranslate.createService(arrayList, object :
+                Listener {
                 override fun onSuccess(linkedHashMap: LinkedHashMap<Int, String>) {
                     alinkedHashMap = linkedHashMap
                     configure()

@@ -1,4 +1,4 @@
-package za.co.lebogangnkosi.apptranslatelib.common
+package za.co.lebogangnkosi.apptranslatelib
 
 import za.co.lebogangnkosi.apptranslatelib.exceptions.TranslateException
 

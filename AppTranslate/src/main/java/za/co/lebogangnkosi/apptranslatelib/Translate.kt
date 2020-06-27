@@ -5,7 +5,6 @@ import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import za.co.lebogangnkosi.apptranslatelib.common.Listener
 import za.co.lebogangnkosi.apptranslatelib.exceptions.TranslateException
 import za.co.lebogangnkosi.apptranslatelib.model.FrontFacing
 import za.co.lebogangnkosi.apptranslatelib.model.Translation
