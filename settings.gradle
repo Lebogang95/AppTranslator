@@ -1,0 +1,3 @@
+rootProject.name='App Translate'
+include ':app'
+include ':AppTranslate'
