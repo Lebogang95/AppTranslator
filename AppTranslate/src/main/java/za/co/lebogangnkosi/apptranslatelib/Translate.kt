@@ -1,6 +1,5 @@
 package za.co.lebogangnkosi.apptranslatelib
 
-import androidx.annotation.NonNull
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -11,28 +10,23 @@ import za.co.lebogangnkosi.apptranslatelib.model.Translation
 import za.co.lebogangnkosi.apptranslatelib.network.BaseApiService
 import za.co.lebogangnkosi.apptranslatelib.util.UtilsApi
 
-class Translate(
-    @NonNull aApiKey: String,
-    @NonNull sourceLanguage: String,
-    @NonNull targetLanguage: String,
-    @NonNull shouldUseSdk: Boolean
-) {
+class Translate(aApiKey: String, sourceLanguage: String, targetLanguage: String, shouldUseSdk: Boolean) {
 
-    var mApiService: BaseApiService? = null
+    private var mApiService: BaseApiService? = null
 
-    var mApiKey: String = aApiKey
+    private var mApiKey: String = aApiKey
 
-    var mSourceLanguage: String = sourceLanguage
+    private var mSourceLanguage: String = sourceLanguage
 
-    var mTargetLanguage: String = targetLanguage
+    private var mTargetLanguage: String = targetLanguage
 
-    var mShouldUseSdk: Boolean = shouldUseSdk
+    private var mShouldUseSdk: Boolean = shouldUseSdk
 
-    var mLinkedHashMap: LinkedHashMap<Int, String> = LinkedHashMap()
+    private var mLinkedHashMap: LinkedHashMap<Int, String> = LinkedHashMap()
 
-    var mArrayList: ArrayList<String> = ArrayList()
+    private var mArrayList: ArrayList<String> = ArrayList()
 
-    lateinit var mListener: Listener
+    private lateinit var mListener: Listener
 
     var disposable: Disposable? = null
 

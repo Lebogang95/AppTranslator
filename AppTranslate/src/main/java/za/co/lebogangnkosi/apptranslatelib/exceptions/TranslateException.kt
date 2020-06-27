@@ -1,6 +1,6 @@
 package za.co.lebogangnkosi.apptranslatelib.exceptions
 
-class TranslateException {
+class TranslateException : Exception() {
 
     var errorMessage: String? = null
 
